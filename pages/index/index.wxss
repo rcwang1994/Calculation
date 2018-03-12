@@ -1,0 +1,68 @@
+/**index.wxss**/
+.page-hd-user{
+  padding: 20px;
+}
+.title-user{
+  font-size: 32px;
+}
+.question-user{
+  flex: 1;
+  line-height: 36px;
+  text-align: left;
+  padding-left: 10px;
+  vertical-align: middle;
+  font-size: 28px;
+}
+.answer-user{
+  flex: 1;
+  line-height: 36px;
+  text-align: right;
+  padding-right: 30px;
+  vertical-align: middle;
+  font-size: 28px;
+}
+.grid-bottom-user {
+  position: fixed;
+  bottom: 2.4em;
+  text-align: center;
+  width: 96%;
+  left: 1.8%; 
+}
+.grid-user{
+  position: relative;
+  float: left;
+  padding: 0px;  
+  width: 33.33333333%;
+  height: 5%;
+  box-sizing: border-box;
+  border-right: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9; 
+   background-color: #fff;   
+} 
+.weui-grid_active-user{
+  background-color: #ececec;
+}
+.num-user{
+  font-size: 24px;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
