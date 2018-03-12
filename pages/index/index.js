@@ -4,7 +4,6 @@ const app = getApp()
 
 Page({
   data: {
-    // grids: [1, 2, 3, 4, 5, 6, 7, 8, 9, '删除', '0', '确定'],
     grids: [
       { id: 1, key: '1' },
       { id: 2, key: '2' },
@@ -31,11 +30,10 @@ Page({
     var a = 1;
     var b = 1;
     var operation = Math.ceil(Math.random() * 4);
-    console.log(operation);
     switch (operation) {
       case 1:
-        value = Math.round(Math.random() * 100);
-        a = Math.ceil(Math.random() * value);
+        value = Math.ceil(20 + Math.random() * 90);
+        a = Math.ceil(10+Math.random() * (value-20));
         b = value - a;
         this.setData({
           question: a + ' + ' + b + ' =',
@@ -44,8 +42,8 @@ Page({
         this.data.result = value;
         break;
       case 2:
-        value = Math.round(Math.random() * 100);
-        a = Math.ceil(Math.random() * (100 - value));
+        value = Math.round(10+Math.random() * 80);
+        a = Math.ceil(10+Math.random() * (90 - value));
         b = a + value;
         this.setData({
           question: b + ' － ' + a + ' =',
@@ -54,8 +52,8 @@ Page({
         this.data.result = value;
         break;
       case 3:
-        a = Math.round(Math.random() * 50);
-        b = Math.ceil(Math.random() * Math.floor(100 / a));
+        a = Math.ceil(1 + Math.random() * 32);
+        b = Math.ceil(1+Math.random() * (Math.floor(100 / a)-1));
         value = a * b;
         this.setData({
           question: a + ' × ' + b + ' =',
@@ -64,8 +62,8 @@ Page({
         this.data.result = value;
         break;
       case 4:
-        value = Math.round(Math.random() * 50);
-        a = Math.ceil(Math.random() * Math.floor(100 / value));
+        value = Math.ceil(1+Math.random() * 32);
+        a = Math.ceil(1 + Math.random() * (Math.floor(100 / value)-1));
         b = a * value;
         this.setData({
           question: b + ' ÷ ' + a + ' =',
