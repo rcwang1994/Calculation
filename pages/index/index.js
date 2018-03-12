@@ -19,6 +19,8 @@ Page({
       { id: 0, key: '0' },
       { id: 11, key: '提交' },
     ],
+    question: '49+13=',
+    answer: 72,
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,

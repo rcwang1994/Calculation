@@ -8,13 +8,13 @@
     <view class="weui-cells__title">题目</view>
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell">
-        <view class="question-user">85+13=</view>
+        <view class="question-user">{{question}}</view>
       </view>
     </view>
     <view class="weui-cells__title">答案</view>
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell">
-         <view class="answer-user">98</view> 
+         <view class="answer-user">{{answer}}</view> 
       </view>
     </view>
     <view class="weui-grids grid-bottom-user">
