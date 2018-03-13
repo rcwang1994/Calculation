@@ -32,7 +32,7 @@ Page({
     var operation = Math.ceil(Math.random() * 4);
     switch (operation) {
       case 1:
-        value = Math.ceil(20 + Math.random() * 90);
+        value = Math.ceil(20 + Math.random() * 80);
         a = Math.ceil(10+Math.random() * (value-20));
         b = value - a;
         this.setData({
